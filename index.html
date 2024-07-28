@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ 
+    <header id="header" class="animated slideInDown">
+        <table>
+            <tr>
+                <td id="logo">Portfolio</td>
+                <td id="navigation">
+                    <a href="#work">Works</a>
+                    <a href="#bio">About</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft">
+                <h1>"The only thing that overcomes hard luck is hard work." —Harry Golden</h1>
+                <button class="btn_one">Hire Me</button><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:1s;"><a href="https://www.facebook.com/dxdkkr" class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:1s;"><a href="https://www.instagram.com/syrm.00/" class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:1s;"><a href="https://github.com/yeshjf" class="social"><i class="fab fa-github"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Works</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="code.png">
+            <img onclick="magnify($(this).attr('src'))" src="1.png">
+            <img onclick="magnify($(this).attr('src'))" src="2.png">
+            <img onclick="magnify($(this).attr('src'))" src="3.png">
+            <img onclick="magnify($(this).attr('src'))" src="4.png">
+            <img onclick="magnify($(this).attr('src'))" src="p2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="p3.jpg">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+        <p>
+            I am currently studying for a Bachelor of Science in Information Technology, where I'm learning about programming, building websites, and designing systems. My classes involve real projects using Java, HTML, and CSS, helping me gain good skills in both website and app development. I like taking on new challenges and enjoy working with others to come up with new tech ideas.
+        </p>
+        <p>
+            Throughout my studies, I have worked on projects that enhanced my IT skills. I enjoy learning new concepts to solve problems and create efficient, user-friendly solutions. Combining creativity and technical knowledge, I am eager to continue growing in these areas.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +639934205968</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; allionesmaryrose@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Purok 2<br>
+                                        Malinawon, Mawab,<br>
+                                       Davao de Oro, Philippines
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/dxdkkr" class="social"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/syrm.00/" class="social"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://github.com/yeshjf" class="social"><i class="fab fa-github"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
